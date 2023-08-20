@@ -1,0 +1,156 @@
+﻿CHARSET="ANSI";
+AXIS-VERSION="2010";
+CODEPAGE="utf-8";
+LANGUAGE="en";
+LANGUAGES="en","fo";
+CREATION-DATE="20190501 09:00";
+DECIMALS=13;
+SHOWDECIMALS=0;
+MATRIX="IP01031_INNT_NBS";
+AGGREGALLOWED=NO;
+COPYRIGHT=YES;
+SUBJECT-CODE="IP";
+SUBJECT-AREA="Prices and income";
+DESCRIPTION="IP01031 Income and taxes by percentile intervals, age, sex and region (2009-2020)";
+TITLE="Income distribution by unit, measure, sex, region, age, year and percentile intervals";
+CONTENTS="Income distribution";
+STUB="unit","measure","sex","region","age";
+HEADING="year","percentile intervals";
+VARIABLECODE("unit")="unit";
+VALUES("unit")="Danish kroner per person";
+VARIABLECODE("measure")="measure";
+VALUES("measure")="Gross income","Net income","Taxes";
+VARIABLECODE("sex")="sex";
+VALUES("sex")="Total (sex)";
+VARIABLECODE("region")="region";
+VALUES("region")="Total(region)","Norðoya region","Eysturoyar region","Norðstreymoyar region","Suðurstreymoyar region","Vága region","Sandoyar region","Suðuroyar region";
+VARIABLECODE("age")="age";
+VALUES("age")="Total (15+ years)";
+VARIABLECODE("year")="year";
+VALUES("year")="2010","2015","2020";
+VARIABLECODE("percentile intervals")="percentile intervals";
+VALUES("percentile intervals")="1","25","50","75","100";
+CODES("unit")="DKK";
+CODES("measure")="BR","NE","TAX";
+CODES("sex")="TOT";
+CODES("region")="9999","4100","4200","4300","4700","4400","4500","4600";
+CODES("age")="Y_GE15";
+CODES("year")="2010","2015","2020";
+CODES("percentile intervals")="P1_AVG","P25_AVG","P50_AVG","P75_AVG","P100_AVG";
+ELIMINATION("sex")="Total (sex)";
+ELIMINATION("region")="Total(region)";
+ELIMINATION("age")="Total (15+ years)";
+PRECISION("unit","Danish kroner per person")=2;
+LAST-UPDATED="20220607 09:00";
+UNITS="persons and DKK";
+CONTACT="Høgni P. Vilhelm";
+SOURCE="<A HREF=http://www.hagstova.fo/en TARGET=_blank>Statistics Faroe Islands</A>";
+NOTE="<b><u>Symbols:</u></b>## <b>-</b>  Nil (exactly zero)# <b>0</b>  Rounded to zero# •  Not applicable# ••  Not available or too uncertain# ••• Not disclosed, confidentiality/privacy protected###<b>Privacy protection</b># Due to privacy protection you are n"
+"ot aloved to combine the variables sex, region and age. If more than one of these variables at selected at a time, the result is shown as '...'###<b>Concerning the quantile intervals in these tables</b>##Quantile (per mille and percentile) intervals of g"
+"ross income, disposable income, taxes and equivalent income are calculated having only whole numbers of persons in each interval, but not always the same number in each interval. The value in the interval is the arithmetic mean of the total amounts in th"
+"e interval. The intervals are ordered ascending by the mean in each interval. The first quantile interval has the lowest mean and the last quantile has the highest mean.##<u>Example:</u> The per mille intervals in the vector disposable income in 2009#36,"
+"294 persons are to be distributed evenly in 1000 intervals such that all intervals contain a whole number of persons. This is accomplished by having 37 persons in the first 294 intervals and 36 persons in the last 706 intervals. This ensures that the ave"
+"rages will be ascending across interval 294 and 295 just as across intervals containing the same number of persons.##Take note that when the total income is multiplied for several quantile intervals simultanously there is a break in the incremental growt"
+"h where the number of persons changes. This is not a problem, on the contrary. This approach guarantees that subsequent calculations of ratios and sums will be correct according to the actual amounts the intervals are calculated from.##The distribution o"
+"f averages in each interval aggrees so well with the distribution of (standard) quantiles that there is almost no visible difference between these methods. A standard quantile distribution would not allow the precise calculations possible by using interv"
+"al means.##The series disposable income and taxes are evaluated separately. There is no exact correspondance between disposable income and the difference between gross income and taxes due to the fact that a (small) number of persons are not the same per"
+" mille interval for a certain year. A person with a high gross income can for example have an extraordinary high (or promoted) taxdeduction resulting in almost no taxes.";
+NOTE("measure")="Income includes all received money during the year potentially available for consumption.#The income can derive from different sources:# • Earnings for work or business income# • Public grants and benefits, such as pension, maintenance allowance and stud"
+"ent grants# • Capital gains, such as received interests and stock profits";
+NOTE("percentile intervals")="The amount shown is mean for the whole percentile.";
+VALUENOTE("measure","Gross income")="Gross income is the total income before subtraction of taxes";
+VALUENOTE("measure","Net income")="Net income is income after subtraction of taxes";
+VALUENOTE("measure","Taxes")="Taxes and other statutory duties";
+VALUENOTE("region","Suðurstreymoyar region")="Includes Hestur, Koltur and Nólsoy";
+VALUENOTE("region","Vága region")="Includes Mykines";
+VALUENOTE("region","Sandoyar region")="Includes Skúgvoy and St. Dímun";
+NEXT-UPDATE="20230606 09:00";
+TABLEID="IP01031";
+UPDATE-FREQUENCY="A";
+VARIABLE-TYPE("region")="locality(region)";
+VARIABLE-TYPE("age")="age";
+VARIABLE-TYPE("year")="TLIST(A1)";
+SUBJECT-AREA[fo]="Inntøkur og prísir";
+DESCRIPTION[fo]="IP01031 Inntøka og skattur skift á persentilrúm, aldur, kyn og øki (2009-2020)";
+TITLE[fo]="Inntøkuuppgerð eftir eind, mát, kyn, øki, aldur, ár og persentilrúm";
+CONTENTS[fo]="Inntøkuuppgerð";
+STUB[fo]="eind","mát","kyn","øki","aldur";
+HEADING[fo]="ár","persentilrúm";
+VARIABLECODE[fo]("eind")="unit";
+VALUES[fo]("eind")="Krónur/persón";
+VARIABLECODE[fo]("mát")="measure";
+VALUES[fo]("mát")="Samlað inntøka","Tøk inntøka","Skattur";
+VARIABLECODE[fo]("kyn")="sex";
+VALUES[fo]("kyn")="Bæði kyn";
+VARIABLECODE[fo]("øki")="region";
+VALUES[fo]("øki")="Tils. (øki)","Norðoya øki","Eysturoyar øki","Norðstreymoyar øki","Suðurstreymoyar øki","Vága øki","Sandoyar øki","Suðuroyar øki";
+VARIABLECODE[fo]("aldur")="age";
+VALUES[fo]("aldur")="Tils. (15+ ár)";
+VARIABLECODE[fo]("ár")="year";
+VALUES[fo]("ár")="2010","2015","2020";
+VARIABLECODE[fo]("persentilrúm")="percentile intervals";
+VALUES[fo]("persentilrúm")="1","25","50","75","100";
+CODES[fo]("eind")="DKK";
+CODES[fo]("mát")="BR","NE","TAX";
+CODES[fo]("kyn")="TOT";
+CODES[fo]("øki")="9999","4100","4200","4300","4700","4400","4500","4600";
+CODES[fo]("aldur")="Y_GE15";
+CODES[fo]("persentilrúm")="P1_AVG","P25_AVG","P50_AVG","P75_AVG","P100_AVG";
+ELIMINATION[fo]("kyn")="Bæði kyn";
+ELIMINATION[fo]("øki")="Tils. (øki)";
+ELIMINATION[fo]("aldur")="Tils. (15+ ár)";
+PRECISION[fo]("eind","Krónur/persón")=2;
+LAST-UPDATED[fo]="20220607 09:00";
+UNITS[fo]="persónar og kr.";
+CONTACT[fo]="Høgni P. Vilhelm";
+SOURCE[fo]="<A HREF=http://www.hagstova.fo TARGET=_blank>Hagstova Føroya</A>";
+NOTE[fo]="<b><u>Tekn:</u></b>## <b>-</b>  Veruliga null (ikki rundað)# <b>0</b>  Rundað til null# •  Kann ikki koma fyri# ••  Ikki til taks ella ikki álítandi# ••• Ikki upplýst, trúnaðarvart###<b>Trúnaðarverja</b># Fyri trúnaðarverju ber tað bara til at greina eft"
+"ir annaðhvørt kyni, øki ella aldri. Um fleiri greiningar verða valdar ísenn, verður tað víst sum '...'###<b>Um kvantilrúm (promillurúm og persentilrúm) í hesum talvunum</b>##Kvantilrúm av tøkari inntøku, samlaðari inntøku, skatti og javnvirðisinntøku eru"
+" gjørd við teirri fortreyt, at talið av persónum í hvørjum rúmi skal vera eitt heiltal, men tað er ikki altíð sama tal av persónum í hvørjum rúmi. Virðið í rúminum er aritmetiskt miðal av samanløgdu krónuupphæddini í rúminum. Rúmini verða skipað eftir st"
+"ødd av miðaltalinum í hvørjum einstøkum rúmi, frá minst til størst. Tað fyrsta kvantilrúmið hevur minsta miðaltal og tað síðsta kvantilrúmið hevur størsta miðaltalið.##<u>Dømi:</u> Promillurúmini í talvuni tøk inntøka í 2009#Tal av fólki er samanlagt 36."
+"294 persónar, og hesir skulu býtast í túsundapartar, soleiðis at hvørt einstakt rúm frá 1 til 1000 bert skal hava heiltal av persónum. Hetta verður gjørt, soleiðis at tey fyrstu 294 rúmini, tað er rúmini frá 1 til 294 hava 37 persónar í hvørjum rúmi. Rúm"
+"ini frá 295 til 1000 hava so 36 persónar í hvørjum rúmi. Miðaltølini verða tí stigvíst vaksandi tvørtur um rúm 294 og 295 á júst sama hátt sum tvørtur um rúm, sum hava sama tal av persónum.##Leggjast skal til merkis, at tá samanlagda inntøkan skal faldas"
+"t upp fyri fleiri promillurúm samstundis, verður brot á tí stigvíst vaksandi vøkstrinum, har sum talið av persónum í hvørjum rúmi broytist. Hetta ger ikki ónáðir, tvørturímóti. Hetta ger, at møguligt er at rokna øll viðkomandi lutføll og samanleggingar, "
+"soleiðis at hesar samsvara við veruligu upphæddirnar, alt er roknað útfrá.##Býtið av miðaltølum í hvørjum rúmi samsvarar so væl við býtið av kvantilmørkum, at stórt sæð ongin sjónligur munur er á hesum báðum arbeiðshættum. Um býtið skuldi verið gjørt við"
+" kvantil<u>mørkum</u> í staðin, bar ikki til at gera tær neyvu uppgerðirnar, sum nú eru møguligar.##Tøk inntøka, samlað inntøka og skattur verður uppgjørt hvørt sær. Tað er tí ikki neyvt samsvar ímillum skatt og munin á samlaða og tøkari inntøku. Hetta k"
+"emur av tí, at hóast flestu persónar í einum ári eru í sama kvantilrúmi, so er hetta ikki altíð galdandi. Til dømis kemur fyri, at persónur við høgari samlaðari inntøku lítlan ella ongan skatt hevur, av tí hann í hesum árinum hevur óvanliga stóran framfl"
+"uttan frádrátt ella øvugt.";
+NOTE[fo]("mát")="Inntøka er tann peningur, sum er fingin til vegar ígjøgnum árið, sum persónurin hevur møguleika at gera nýtslu av.Inntøkan hjá einum persóni ella húski kann koma frá trimum ymiskum keldum:# • Løn fyri arbeiði og yvirskot frá egnum virki# • Veitingar frá "
+"tí almenna, so sum pensjón, dagpeningur og lestrarstudningur# • Ognarinntøka, so sum rentuinntøkur og virðisbrævavinningur o.a. kapitalinntøkur";
+NOTE[fo]("persentilrúm")="Krónutalið, ið verður víst, er miðal krónutalið í persentilrúminum.";
+VALUENOTE[fo]("mát","Samlað inntøka")="Samlað inntøka er inntøkan, áðrenn skattur er drigin frá";
+VALUENOTE[fo]("mát","Tøk inntøka")="Tøk inntøka er inntøka eftir skatt";
+VALUENOTE[fo]("mát","Skattur")="Skattur og onnur lógarkravd gjøld";
+VALUENOTE[fo]("øki","Suðurstreymoyar øki")="Fevnir eisini um Hest, Koltur og Nólsoy";
+VALUENOTE[fo]("øki","Vága øki")="Fevnir eisini um Mykines";
+VALUENOTE[fo]("øki","Sandoyar øki")="Fevnir eisini um Skúgvoy og St. Dímun";
+VARIABLE-TYPE[fo]("øki")="locality(region)";
+VARIABLE-TYPE[fo]("aldur")="age";
+VARIABLE-TYPE[fo]("ár")="TLIST(A1)";
+DESCRIPTIONDEFAULT=YES;
+DATA=
+3281.0372328767100 124109.8063287670000 213268.5881043960000 336481.9587087910000 1294606.8100549500000 3008.6527659574500 135558.0000000000000 235081.5307466670000 381487.6178666670000 1993387.8059733300000 5103.1294320987700 168703.0000000000000 282215.1897283950000 433940.7023514850000 2063497.6249752500000 
+3021.7111111111100 118496.0290909090000 196750.4125000000000 314765.1272727270000 1295272.1579545500000 3446.9782608695700 130242.0950000000000 221492.7384782610000 368644.9934782610000 2036957.9751111100000 5983.8458000000000 168696.1000000000000 267019.2155102040000 419513.9871428570000 2056415.7802040800000 
+2642.1593827160500 123051.6713580250000 205328.7820987650000 326472.2583750000000 1343023.1696250000000 2994.7275903614500 135558.0000000000000 229144.4904819280000 376795.0234939760000 2908783.1532926800000 5878.4594505494500 168703.0000000000000 280167.6160439560000 430770.8010989010000 2162419.5515555600000 
+3661.9341379310300 120639.5748275860000 216686.8310344830000 325800.3731034480000 1200962.0696428600000 3735.0000000000000 135558.0000000000000 234615.9886206900000 375523.4827586210000 1628161.6621428600000 4176.2580645161300 168244.6732258060000 278682.6880645160000 428415.4956666670000 2747763.7856666700000 
+3644.1637323943700 127069.7738297870000 238315.7003546100000 361886.3161702130000 1352936.4939007100000 2620.4469798657700 136383.5235810810000 254560.2154054050000 400137.6318243240000 1707477.2051351400000 4705.0106211180100 170497.7681366460000 306109.5348447210000 455396.7630434780000 2072331.5832500000000 
+5102.6521739130400 125924.4426086960000 211342.7873913040000 334946.6630434780000 1216274.9113636400000 3928.4104166666700 135498.1495652170000 232980.3400000000000 381471.8821739130000 1800014.3591304300000 4314.8700000000000 163514.2692307690000 269819.1711538460000 424125.6008000000000 1817128.2308000000000 
+3620.6309090909100 111685.3218181820000 175516.8018181820000 295790.8100000000000 1042646.1900000000000 3092.3870000000000 120034.5990000000000 188158.4220000000000 342886.5270000000000 1394550.3855555600000 6152.1809090909100 165109.1818181820000 251483.5100000000000 405857.1280000000000 1449462.3570000000000 
+2503.8213513513500 119138.9624324320000 188110.2878378380000 296085.2836111110000 1109555.5786111100000 3352.0427027027000 132396.4941666670000 209511.8736111110000 339213.9733333330000 1442672.7491666700000 6144.2432432432400 159168.8162162160000 241384.7294594590000 389518.8352777780000 1504113.7027777800000 
+2648.4601369863000 97053.7762739726000 145379.0620329670000 203321.0770879120000 772959.2661538460000 2535.7728723404300 105830.2658133330000 157532.7503733330000 236970.7312266670000 1276477.9815200000000 4552.6816296296300 135897.6356296300000 192803.8894814810000 269975.2203465350000 1300611.2848762400000 
+2433.3364444444400 95662.1795454545000 136590.9090909090000 193676.6650000000000 767090.5740909090000 2790.8113043478300 102812.7886956520000 150992.8063043480000 227087.7967391300000 1240680.4700000000000 5301.4618000000000 134515.2288000000000 183174.3624489800000 262110.4967346940000 1182584.0791836700000 
+2315.5920987654300 96690.3298765432000 139894.1197530860000 196032.9486250000000 796695.1473750000000 2725.9178313253000 105601.7543373490000 153325.6583132530000 231751.1872289160000 1806257.8095122000000 5408.0159340659300 136412.5573626370000 188048.8586813190000 261773.7329670330000 1337699.6530000000000 
+3262.8062068965500 96562.5662068965000 145069.2244827590000 198864.3403448280000 674294.4707142860000 3419.2172413793100 107323.0358620690000 156235.2565517240000 230189.1510344830000 995263.8996428570000 3720.8158064516100 135313.8370967740000 191288.3635483870000 264546.9713333330000 1736243.5210000000000 
+2938.7389436619700 101111.3866666670000 158611.3670921990000 215953.5123404260000 796087.7087943260000 2149.2165100671100 109522.2319594590000 172255.5579054050000 251027.7557432430000 1109872.6341216200000 4119.1983229813700 140821.9567080750000 207579.0244720500000 286088.8503105590000 1327912.2945625000000 
+4459.3104347826100 97320.8326086957000 146328.9221739130000 204034.2326086960000 769545.7372727270000 3020.3833333333300 104977.4239130430000 157051.5278260870000 230750.1800000000000 1220967.6882608700000 3682.4161538461500 127471.0765384620000 184059.6865384620000 259942.3184000000000 1160363.9312000000000 
+2599.6263636363600 94800.1945454545000 126938.1636363640000 182776.1910000000000 744787.7180000000000 2257.5030000000000 100476.1980000000000 134574.6010000000000 216251.4330000000000 1191557.2388888900000 5503.2863636363600 134143.1009090910000 179891.6630000000000 254710.2090000000000 1274286.4380000000000 
+1673.8391891891900 96105.9902702703000 130790.4216216220000 183860.9716666670000 724391.7691666670000 2837.3562162162200 103910.3077777780000 143897.8983333330000 211102.1469444440000 1026958.3472222200000 5657.0813513513500 128470.9913513510000 173195.0205405410000 247022.4952777780000 1000223.4758333300000 
+54.9269589041096 17847.0506849315000 65289.5732967033000 128176.5337637360000 646405.6963736260000 54.0204787234043 19541.4550400000000 71729.7129066667000 138162.1245866670000 847893.7741600000000 145.1527407407410 25859.6270617284000 84627.3061481481000 161177.4150742570000 888000.9092821780000 
+46.9457777777778 16021.9993181818000 57330.7113636364000 114241.4656818180000 653889.2052272730000 58.0604347826087 18973.4506521739000 65545.2630434783000 131685.8876086960000 922825.9164444440000 200.7434000000000 25741.9200000000000 80826.3477551020000 156043.8518367350000 945741.5195918370000 
+43.3466666666667 18318.6241975309000 65031.1582716049000 123937.8196250000000 665683.5803750000000 55.5086746987952 19585.1416867470000 72859.0600000000000 137647.2168674700000 1204203.5235365900000 176.3317582417580 26534.0829670330000 87966.3028571429000 164624.0678021980000 949636.4541111110000 
+63.7448275862069 17322.0403448276000 66894.7200000000000 126743.2827586210000 605117.9225000000000 55.0975862068966 19330.4782758621000 73887.5882758621000 139211.8158620690000 731817.1192857140000 114.2929032258060 25353.9509677419000 84280.8151612903000 161348.6323333330000 1131643.7553333300000 
+62.4827464788732 19767.3095035461000 75313.0336879433000 142184.6493617020000 676847.0234751770000 48.7116778523490 21746.8683108108000 78634.4824324324000 145560.9035135140000 720230.8094594600000 120.0655279503110 27417.9677639752000 93209.9778881988000 168646.5209316770000 859950.9056875000000 
+96.6956521739130 16836.6152173913000 60992.2886956522000 123520.6217391300000 619527.7004545450000 78.9062500000000 19934.4830434783000 69509.9352173913000 138358.4395652170000 786843.3113043480000 144.6323076923080 25960.4323076923000 78206.8634615385000 157139.2116000000000 827516.9136000000000 
+52.9090909090909 15037.6772727273000 44591.3000000000000 104773.6300000000000 493788.8430000000000 63.4550000000000 16135.5570000000000 44620.8330000000000 117140.1950000000000 485726.1944444440000 167.1209090909090 25223.8018181818000 65729.5930000000000 142779.7880000000000 522222.0180000000000 
+42.3289189189189 16177.5554054054000 52873.6489189189000 104880.0613888890000 536759.9477777780000 61.1972972972973 18415.2433333333000 60445.2808333333000 120307.5655555560000 587299.2147222220000 178.5324324324320 23209.0770270270000 61793.7772972973000 137318.1463888890000 645769.0355555560000 
+;

@@ -1,0 +1,51 @@
+﻿CHARSET="ANSI";
+AXIS-VERSION="2010";
+CODEPAGE="utf-8";
+LANGUAGE="en";
+CREATION-DATE="20000101 09:00";
+DECIMALS=0;
+SHOWDECIMALS=0;
+MATRIX="IB01010_FO_VITAL_MD";
+COPYRIGHT=YES;
+SUBJECT-CODE="IB";
+SUBJECT-AREA="Population and elections";
+DESCRIPTION="IB01010 Changes in population by born, dead, migrated, village and month (1985-2022)";
+TITLE="Changes in population by village/city, year, month, sex and changes";
+CONTENTS="Changes in population";
+STUB="village/city";
+HEADING="year","month","sex","changes";
+VARIABLECODE("village/city")="village/city";
+VALUES("village/city")="Tvøroyrar municipality";
+VARIABLECODE("year")="year";
+VALUES("year")="1985","1986","1987","1988","1989","1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020",
+"2021","2022";
+VARIABLECODE("month")="month";
+VALUES("month")="Jan","Feb";
+VARIABLECODE("sex")="sex";
+VALUES("sex")="Total (sex)";
+VARIABLECODE("changes")="changes";
+VALUES("changes")="Population primo";
+TIMEVAL("year")=TLIST(A1),"1985","1986","1987","1988","1989","1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022";
+CODES("village/city")="4602";
+CODES("year")="1985","1986","1987","1988","1989","1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020",
+"2021","2022";
+CODES("month")="M01","M02";
+CODES("sex")="TOT";
+CODES("changes")="Popu_primo";
+ELIMINATION("sex")="Total (sex)";
+LAST-UPDATED="20230110 09:00";
+UNITS="persons";
+CONTACT="Erla Thorsteinsson";
+SOURCE="Statistics Faroe Islands: www.hagstova.fo/en";
+NOTE="<b><u>Symbols:</u></b>## <b>-</b>  Nil (exactly zero)# <b>0</b>  Rounded to zero# •  Not applicable# ••  Not available or too uncertain# ••• Not disclosed, confidentiality/privacy protected###";
+NOTE("village/city")="The borders between Froðba, Tvøroyri and Trongisvág were adjusted in June 2009";
+NEXT-UPDATE="20230210 09:00";
+TABLEID="IB01010";
+UPDATE-FREQUENCY="M";
+VARIABLE-TYPE("village/city")="locality(village)";
+VARIABLE-TYPE("year")="TLIST(A1)";
+VARIABLE-TYPE("month")="TIME(M0)";
+DESCRIPTIONDEFAULT=YES;
+DATA=
+2118 2125 2118 2114 2114 2121 2124 2124 2120 2125 2111 2103 2083 2078 2088 2078 2018 2007 1959 1965 1858 1837 1824 1828 1815 1812 1783 1791 1788 1799 1783 1790 1826 1834 1838 1837 1867 1868 1849 1854 1836 1822 1814 1820 1819 1828 1789 1787 1765 1752 1737 1734 1719 1710 1684 1690 1734 1730 1741 1744 1721 1722 1691 1704 1724 1714 1716 1712 1712 1712 1710 1717 1744 1754 1770 1754 
+;

@@ -1,0 +1,61 @@
+﻿CHARSET="ANSI";
+AXIS-VERSION="2010";
+CODEPAGE="utf-8";
+LANGUAGE="fo";
+CREATION-DATE="20000101 09:30";
+DECIMALS=0;
+SHOWDECIMALS=0;
+MATRIX="AM03031_LONT_VKAOM_T";
+COPYRIGHT=YES;
+SUBJECT-CODE="AM";
+SUBJECT-AREA="Arbeiði og lønir";
+DESCRIPTION="AM03031 Løntakarar skiftir á vinnugrein, øki, kyn og aldur (1985M01-2023M07)";
+TITLE="Løntakarar eftir mánaður, vinnugrein, øki, kyn og aldur";
+CONTENTS="Løntakarar";
+STUB="mánaður";
+HEADING="vinnugrein","øki","kyn","aldur";
+VARIABLECODE("mánaður")="month";
+VALUES("mánaður")="2019M01","2020M01","2021M01","2022M01","2023M01";
+VARIABLECODE("vinnugrein")="industry";
+VALUES("vinnugrein")="Tils. (vinnnugrein)","FISKIVINNA O.O. TILFEINGISVINNA","- Ráevnisvinna","- Landbúnaður","- Fiskiskapur","- Ali- og kryvjivirki","- Fiskavøruídnaður","- Ótilskilað v.m.","BYGGIVINNA O.O. TILVIRKING","- Bygging","- Skipasmiðjur, smiðjur",
+"- Orku- og vatnveiting","- Annar ídnaður","PRIVATAR TÆNASTUVINNUR","- Handil og umvæling","- Gistihús og matstovuvirki","- Sjóflutningur","- Flutningur annars","- Felagsskapir, mentan o.a.","- Postur og fjarskifti","- Fígging og trygging",
+"- Vinnuligar tænastur","- Húshaldstænastur","ALMENN O.O. TÆNASTA","-  Landsfyrisiting","-  Kommunur og ríkisstovnar","-  Undirvísing","-  Heilsu- og almannaverk";
+VARIABLECODE("øki")="region";
+VALUES("øki")="Suðuroyar øki";
+VARIABLECODE("kyn")="sex";
+VALUES("kyn")="Bæði kyn","Mannfólk","Konufólk";
+VARIABLECODE("aldur")="age";
+VALUES("aldur")="Tils. (16-74 ár)","16-19 ár","20-24 ár","25-39 ár","40-54 ár","55-66 ár","67-74 ár";
+CODES("mánaður")="2019M01","2020M01","2021M01","2022M01","2023M01";
+CODES("vinnugrein")="VGTOT","VGB1","RE","LB","FS","AK","FV","OS","VGB2","BY","SK","OV","ID","VGB3","HU","GI","SJ","FL","FM","PO","FT","VT","HT","VGB4","LF","KR","UV","HA";
+CODES("øki")="4600";
+CODES("kyn")="TOT","M","F";
+CODES("aldur")="Y_16-74","Y16-19","Y20-24","Y25-39","Y40-54","Y55-66","Y67-74";
+ELIMINATION("vinnugrein")="Tils. (vinnugrein)";
+ELIMINATION("kyn")="Bæði kyn";
+ELIMINATION("aldur")="Tils. (16-74 ár)";
+LAST-UPDATED="20230815 09:00";
+UNITS="tal";
+CONTACT="Kári Holm Johannesen";
+SOURCE="Hagstova Føroya: www.hagstova.fo";
+NOTE="<b><u>Tekn:</u></b>## <b>-</b>  Veruliga null (ikki rundað)# <b>0</b>  Rundað til null# •  Kann ikki koma fyri# ••  Ikki til taks ella ikki álítandi# ••• Ikki upplýst, trúnaðarvart###Hagtølini um løntakarar vísa talið av føroyskum løntakarum millum 16 og"
+" 74 ár, sum fáa løn um samtíðarskattaskipanina. At løntakarin er føroyskur, merkir í hesum føri, at hann hevur bústað í Føroyum í tíðarskeiðinum, tá lønin verður útgoldin. #Sum løntakarar verða tald tey, sum í einum mánaða fáa eina lønarupphædd útgoldna,"
+" sum í minnsta lagi er ájavnt eina dagløn hjá ófaklærdum arbeiðsfólki. Hetta, uttan mun til um lønargjaldarin er ein føroysk ella ein útlendsk fyritøka. #Sum lønarútgjøld verða bara taldar upphæddir, sum eru løn fyri útinnt arbeiði, og ikki aðrar samsýni"
+"ngar og útgjøld, so sum veitingar og eftirlønir. #Eisini verða tey tald uppí, sum fara úr arbeiði vegna barsilsfarloyvi ella sjúku. #Hvønn mánaða eru fleiri, sum fáa lønarinntøku frá ymsum arbeiðsgevarum, men fyri at hvør løntakari bert skal telja við ei"
+"na ferð hvønn mánaða, verða løntakarar flokkaðir í vinnugrein alt eftir, hvaðani størsti parturin av inntøkuni kom í galdandi mánaða. #Føroyskir løntakarar, sum ikki fáa løn goldna um samtíðarskattaskipanina, verða av skilligum ávum ikki taldir sum lønta"
+"karar. Hetta er millum annað galdandi tey, sum sigla í DIS skipanini, ella sum á annan hátt fáa løn goldna uttanlands. #Hesar reglurnar, vit hava hildið okkum til í uppgerðini, eru lagdar soleiðis, at uppgerðin í frægasta mun fylgir reglum frá ILO og tí "
+"verður sambærlig við líknandi uppgerðir í øðrum londum. #Frá 2004 er vinnugreinabýtið broytt soleiðis, at vinnugreinin 'Almenn fyrisiting v.m.', eru greinað sundur í undirbólkarnar 'Landsfyrisiting', 'Kommunur, ríkisstovnar o.a.', 'Heilsu- og Almannaverk"
+"' og 'Undirvísing'. #Hagtalsliga eindin er tal av fólki, skift á ár og mánaða, kyn, aldur, vinnugrein og sýslu. #Ársuppgerðin er grundað á mánaðaruppgerðina í novembur. #";
+NEXT-UPDATE="20230912 09:00";
+TABLEID="AM03031";
+UPDATE-FREQUENCY="M";
+VARIABLE-TYPE("øki")="locality(district)";
+VARIABLE-TYPE("aldur")="age";
+DESCRIPTIONDEFAULT=YES;
+DATA=
+2126 150 189 519 661 506 101 1096 72 115 272 320 251 66 1030 78 74 247 341 255 35 528 45 61 135 165 100 22 378 34 41 97 118 68 20 150 11 20 38 47 32 2 10 0 0 2 4 4 0 10 0 0 2 4 4 0 0 0 0 0 0 0 0 2 0 0 2 0 0 0 0 0 0 0 0 0 0 2 0 0 2 0 0 0 119 11 12 30 41 18 7 111 11 11 29 39 14 7 8 0 1 1 2 4 0 85 12 7 17 29 19 1 64 9 5 12 20 17 1 21 3 2 5 9 2 0 300 22 42 82 84 56 14 181 14 25 52 48 30 12 119 8 17 30 36 26 2 12 0 0 2 7 3 0 12 0 0 2 7 3 0 0 0 0 0 0 0 0 310 26 47 89 86 53 9 277 21 46 85 73 44 8 33 5 1 4 13 9 1 170 7 21 61 45 29 7 166 7 21 60 44 27 7 4 0 0 1 1 2 0 52 10 12 15 9 5 1 39 5 11 13 6 3 1 13 5 1 2 3 2 0 18 0 0 4 6 8 0 15 0 0 4 5 6 0 3 0 0 0 1 2 0 70 9 14 9 26 11 1 57 9 14 8 18 8 0 13 0 0 1 8 3 1 516 74 62 116 125 105 34 252 17 24 61 66 62 22 264 57 38 55 59 43 12 176 44 26 37 26 30 13 58 9 6 15 7 14 7 118 35 20 22 19 16 6 46 20 9 6 5 4 2 10 3 2 3 2 0 0 36 17 7 3 3 4 2 134 4 9 30 46 41 4 84 2 1 20 27 31 3 50 2 8 10 19 10 1 22 0 1 9 6 4 2 20 0 1 7 6 4 2 2 0 0 2 0 0 0 36 3 9 7 3 6 8 25 1 9 3 2 4 6 11 2 0 4 1 2 2 17 0 0 6 9 1 1 5 0 0 2 3 0 0 12 0 0 4 6 1 1 48 1 2 14 12 15 4 25 0 1 8 6 6 4 23 1 1 6 6 9 0 23 1 5 2 12 3 0 16 1 3 2 8 2 0 7 0 2 0 4 1 0 14 1 1 5 6 1 0 9 1 1 1 5 1 0 5 0 0 4 1 0 0 772 5 19 179 285 248 36 189 0 4 29 63 77 16 583 5 15 150 222 171 20 18 1 0 2 6 8 1 8 0 0 0 1 6 1 10 1 0 2 5 2 0 291 2 9 68 111 88 13 100 0 3 14 37 38 8 191 2 6 54 74 50 5 122 0 0 31 48 38 5 43 0 0 7 14 19 3 79 0 0 24 34 19 2 341 2 10 78 120 114 17 38 0 1 8 11 14 4 303 2 9 70 109 100 13 
+2110 157 191 515 650 488 109 1054 76 106 262 302 240 68 1056 81 85 253 348 248 41 525 44 67 138 149 108 19 354 33 33 94 102 73 19 171 11 34 44 47 35 0 8 0 0 1 4 3 0 8 0 0 1 4 3 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 98 7 8 25 28 23 7 90 7 8 23 26 19 7 8 0 0 2 2 4 0 98 10 6 27 30 25 0 66 7 2 17 19 21 0 32 3 4 10 11 4 0 307 27 53 82 79 54 12 177 19 23 51 45 27 12 130 8 30 31 34 27 0 13 0 0 2 8 3 0 13 0 0 2 8 3 0 0 0 0 0 0 0 0 303 35 49 79 80 49 11 264 26 45 73 68 42 10 39 9 4 6 12 7 1 175 16 27 58 39 28 7 166 14 25 56 38 26 7 9 2 2 2 1 2 0 53 12 9 11 13 7 1 37 6 7 9 9 5 1 16 6 2 2 4 2 0 17 0 0 3 7 7 0 14 0 0 3 6 5 0 3 0 0 0 1 2 0 58 7 13 7 21 7 3 47 6 13 5 15 6 2 11 1 0 2 6 1 1 483 72 51 117 115 100 28 246 17 23 66 63 58 19 237 55 28 51 52 42 9 159 41 21 34 24 30 9 48 6 7 9 9 13 4 111 35 14 25 15 17 5 37 19 11 1 2 3 1 12 5 4 1 1 1 0 25 14 7 0 1 2 1 133 4 9 37 41 38 4 87 1 4 27 24 28 3 46 3 5 10 17 10 1 24 1 1 9 7 4 2 23 1 1 9 6 4 2 1 0 0 0 1 0 0 34 4 3 10 5 5 7 23 2 3 6 3 3 6 11 2 0 4 2 2 1 19 1 1 6 9 1 1 8 1 1 2 4 0 0 11 0 0 4 5 1 1 48 0 1 17 12 14 4 25 0 0 10 6 5 4 23 0 1 7 6 9 0 17 0 4 2 8 3 0 12 0 3 2 5 2 0 5 0 1 0 3 1 0 12 2 0 1 7 2 0 8 1 0 0 5 2 0 4 1 0 1 2 0 0 799 6 24 181 306 231 51 190 0 5 29 69 67 20 609 6 19 152 237 164 31 22 0 0 4 6 8 4 12 0 0 2 2 5 3 10 0 0 2 4 3 1 295 2 11 72 115 79 16 97 0 5 11 39 32 10 198 2 6 61 76 47 6 131 0 0 33 59 36 3 45 0 0 8 18 17 2 86 0 0 25 41 19 1 351 4 13 72 126 108 28 36 0 0 8 10 13 5 315 4 13 64 116 95 23 
+2112 148 182 543 656 479 104 1054 72 92 285 305 238 62 1058 76 90 258 351 241 42 519 39 61 151 150 95 23 367 27 37 108 105 68 22 152 12 24 43 45 27 1 11 0 0 2 3 5 1 11 0 0 2 3 5 1 0 0 0 0 0 0 0 3 0 0 2 1 0 0 1 0 0 1 0 0 0 2 0 0 1 1 0 0 101 8 8 31 31 16 7 96 7 8 30 29 15 7 5 1 0 1 2 1 0 86 8 7 22 28 19 2 62 5 4 14 20 17 2 24 3 3 8 8 2 0 305 23 46 91 80 52 13 184 15 25 58 46 28 12 121 8 21 33 34 24 1 13 0 0 3 7 3 0 13 0 0 3 7 3 0 0 0 0 0 0 0 0 284 35 41 76 75 49 8 255 32 36 72 66 41 8 29 3 5 4 9 8 0 162 14 22 54 37 28 7 157 14 21 53 36 26 7 5 0 1 1 1 2 0 52 11 11 11 12 6 1 38 9 8 8 8 4 1 14 2 3 3 4 2 0 15 0 0 2 6 7 0 12 0 0 2 5 5 0 3 0 0 0 1 2 0 55 10 8 9 20 8 0 48 9 7 9 17 6 0 7 1 1 0 3 2 0 490 66 47 134 120 99 24 236 11 16 73 62 61 13 254 55 31 61 58 38 11 186 48 25 41 32 32 8 49 6 5 12 10 15 1 137 42 20 29 22 17 7 29 13 6 4 3 2 1 6 2 1 2 1 0 0 23 11 5 2 2 2 1 131 2 6 42 39 37 5 87 0 4 30 21 28 4 44 2 2 12 18 9 1 27 0 1 6 11 7 2 24 0 1 5 9 7 2 3 0 0 1 2 0 0 26 3 5 8 4 2 4 21 3 4 7 2 1 4 5 0 1 1 2 1 0 18 0 0 7 7 2 2 8 0 0 4 3 1 0 10 0 0 3 4 1 2 44 0 1 17 13 11 2 22 0 0 10 7 3 2 22 0 1 7 6 8 0 13 0 1 3 6 3 0 10 0 1 1 5 3 0 3 0 0 2 1 0 0 16 0 2 6 5 3 0 9 0 0 2 4 3 0 7 0 2 4 1 0 0 819 8 33 182 311 236 49 196 2 3 32 72 68 19 623 6 30 150 239 168 30 20 0 0 4 4 10 2 10 0 0 1 1 6 2 10 0 0 3 3 4 0 303 6 14 69 116 84 14 106 1 2 16 40 37 10 197 5 12 53 76 47 4 136 1 6 26 65 35 3 40 1 0 3 21 14 1 96 0 6 23 44 21 2 360 1 13 83 126 107 30 40 0 1 12 10 11 6 320 1 12 71 116 96 24 
+2120 144 183 535 683 468 107 1083 79 105 280 328 230 61 1037 65 78 255 355 238 46 529 44 66 146 158 95 20 383 39 39 109 116 63 17 146 5 27 37 42 32 3 12 0 0 2 4 6 0 12 0 0 2 4 6 0 0 0 0 0 0 0 0 3 0 0 2 1 0 0 1 0 0 1 0 0 0 2 0 0 1 1 0 0 116 14 12 35 29 19 7 111 13 12 34 27 18 7 5 1 0 1 2 1 0 99 10 14 21 33 20 1 72 8 8 15 26 14 1 27 2 6 6 7 6 0 289 20 40 84 84 49 12 177 18 19 55 52 24 9 112 2 21 29 32 25 3 10 0 0 2 7 1 0 10 0 0 2 7 1 0 0 0 0 0 0 0 0 309 28 52 76 86 55 12 272 23 46 70 77 45 11 37 5 6 6 9 10 1 185 13 29 51 51 32 9 173 12 26 49 49 28 9 12 1 3 2 2 4 0 58 9 16 13 13 5 2 43 6 13 10 9 3 2 15 3 3 3 4 2 0 16 0 0 2 6 8 0 13 0 0 2 5 6 0 3 0 0 0 1 2 0 50 6 7 10 16 10 1 43 5 7 9 14 8 0 7 1 0 1 2 2 1 472 65 42 117 127 95 26 242 16 15 69 67 60 15 230 49 27 48 60 35 11 186 55 23 38 31 31 8 63 14 7 14 10 17 1 123 41 16 24 21 14 7 18 6 3 4 4 1 0 3 1 1 0 1 0 0 15 5 2 4 3 1 0 131 2 6 35 44 37 7 87 0 3 28 25 26 5 44 2 3 7 19 11 2 28 0 0 5 13 7 3 24 0 0 5 10 7 2 4 0 0 0 3 0 1 22 0 7 7 1 3 4 14 0 3 5 0 2 4 8 0 4 2 1 1 0 17 1 0 6 8 1 1 8 1 0 4 3 0 0 9 0 0 2 5 1 1 37 1 0 12 13 8 3 18 0 0 6 7 2 3 19 1 0 6 6 6 0 19 0 2 6 7 4 0 15 0 1 5 6 3 0 4 0 1 1 1 1 0 14 0 1 4 6 3 0 10 0 0 2 5 3 0 4 0 1 2 1 0 0 810 7 23 196 312 223 49 186 1 5 32 68 62 18 624 6 18 164 244 161 31 20 0 0 2 5 10 3 10 0 0 1 1 6 2 10 0 0 1 4 4 1 290 6 10 71 107 83 13 101 0 4 17 34 37 9 189 6 6 54 73 46 4 141 0 3 36 69 29 4 39 0 1 4 23 8 3 102 0 2 32 46 21 1 359 1 10 87 131 101 29 36 1 0 10 10 11 4 323 0 10 77 121 90 25 
+2134 151 178 539 673 478 115 1068 73 105 281 307 231 71 1066 78 73 258 366 247 44 491 32 52 140 154 94 19 351 22 37 104 108 64 16 140 10 15 36 46 30 3 11 0 0 1 3 7 0 11 0 0 1 3 7 0 0 0 0 0 0 0 0 2 0 0 2 0 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 0 96 7 10 23 24 23 9 94 7 10 23 23 22 9 2 0 0 0 1 1 0 99 9 12 20 36 22 0 71 7 7 15 27 15 0 28 2 5 5 9 7 0 265 14 30 89 83 39 10 158 8 20 59 47 17 7 107 6 10 30 36 22 3 18 2 0 5 8 3 0 16 0 0 5 8 3 0 2 2 0 0 0 0 0 310 36 47 85 79 51 12 272 30 43 76 71 41 11 38 6 4 9 8 10 1 189 16 28 59 48 31 7 174 16 26 53 45 27 7 15 0 2 6 3 4 0 56 12 12 13 10 5 4 42 7 11 11 8 2 3 14 5 1 2 2 3 1 17 1 0 2 6 7 1 13 0 0 2 5 5 1 4 1 0 0 1 2 0 48 7 7 11 15 8 0 43 7 6 10 13 7 0 5 0 1 1 2 1 0 488 79 46 108 124 103 28 246 20 20 61 64 61 20 242 59 26 47 60 42 8 196 63 21 39 36 29 8 67 18 7 14 13 12 3 129 45 14 25 23 17 5 27 11 4 3 5 3 1 10 0 2 3 2 2 1 17 11 2 0 3 1 0 129 2 8 30 40 43 6 81 0 3 23 22 28 5 48 2 5 7 18 15 1 25 1 3 6 6 7 2 21 0 1 6 6 7 1 4 1 2 0 0 0 1 23 1 5 9 2 3 3 15 1 4 4 1 2 3 8 0 1 5 1 1 0 15 0 0 5 9 0 1 7 0 0 3 4 0 0 8 0 0 2 5 0 1 35 0 1 9 13 9 3 18 0 1 4 7 3 3 17 0 0 5 6 6 0 24 1 3 4 6 6 4 18 1 2 2 5 4 4 6 0 1 2 1 2 0 14 0 1 3 7 3 0 9 0 0 2 4 3 0 5 0 1 1 3 0 0 845 4 33 206 316 230 56 199 1 5 40 64 65 24 646 3 28 166 252 165 32 21 0 0 1 8 10 2 11 0 0 1 3 5 2 10 0 0 0 5 5 0 304 2 22 74 104 89 13 105 0 4 22 31 39 9 199 2 18 52 73 50 4 140 0 2 41 63 26 8 38 0 1 6 19 6 6 102 0 1 35 44 20 2 380 2 9 90 141 105 33 45 1 0 11 11 15 7 335 1 9 79 130 90 26 
+;
