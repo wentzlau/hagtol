@@ -14,8 +14,25 @@ def style_fig(fig, title, subtitle, footer):
     fig.tick_params(axis = 'both', which = 'major', labelsize = 18)
     fig.axhline(y = 0, color = 'black', linewidth = 1.3, alpha = .7)
     fig.xaxis.label.set_visible(False)
-    fig.text(x = 0, y = -7,
-    s = ' ©DATAQUEST Source: National Center for Education Statistics',fontsize = 14, color = '#f0f0f0', backgroundcolor = 'grey')
+
+    
+
+    fig.axes.annotate('...Additional information...',
+            xy=(0.5, 0), xytext=(0, 10),
+            xycoords=('axes fraction', 'figure fraction'),
+            textcoords='offset points',
+            size=14, ha='center', va='bottom',
+            backgroundcolor='grey',
+            bbox=dict(boxstyle="round", facecolor="lightblue", edgecolor="white"))
+    fig.text(
+        x = 145, 
+        y = -100, 
+        s = '©DATAQUEST                                                     Source: National Center for Education Statistics',
+        fontsize = 14, 
+        color = '#f0f0f0', 
+        backgroundcolor = 'grey',
+        #horisontalaligment= "center"
+    )
     fig.text(x = 0, y = 62.7, s = "The gender gap is transitory - even for extreme cases",
                fontsize = 26, weight = 'bold', alpha = .75)
     fig.text(x = 0, y = 57,
@@ -154,7 +171,7 @@ if r.status_code == 200:
     dp.drop(dp.tail(1).index,inplace=True)
     #print(dp.head())
     fig = dp.plot( x='date', figsize=(12,9))
-    
+    fig.axes.annotate
     plt.legend(['Males birth-death', 'Males domestic migration', "Males foreign migration", "Females birth-death", "Females domestic migration", "Females foreign migration", "Total"])
     style_fig(fig, "Title", "sub title", "footer")
     plt.show()

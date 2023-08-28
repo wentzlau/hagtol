@@ -83,3 +83,4 @@ def box_plot_2(percentiles, *args, **kwargs):
     #    ax.figure.canvas.draw()
         
     return box_plot
+
