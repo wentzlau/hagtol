@@ -1,3 +1,6 @@
+import requests
+from pyaxis import pyaxis
+
 def get_filter_data():
     filter = {
         "suduroy" : {
@@ -54,3 +57,17 @@ def get_filter(region, municipality):
         return (filter_data[region]["filter"], filter_data[region]["value"])
     else:
         return (filter_data[region]["municipalities"][municipality]["filter"], filter_data[region]["municipalities"][municipality]["value"])
+    
+def fetch_data(endpoint, json_body, tmp_file_name):
+    temp_file = tmp_file_name + ".px"
+    base_url = "https://statbank.hagstova.fo:443/api/"
+    r = requests.post( base_url + endpoint, json = json_body)
+    #print("status code", r.status_code)
+    if r.status_code == 200:
+        with open(temp_file, 'wb') as outf:
+            outf.write(r.content)
+        px = pyaxis.parse(temp_file, encoding='utf-8')
+    #print(px['DATA'])
+        return px['DATA']
+    else:
+        raise Exception(f"error fetch file, status code: {r.status_code}") 
