@@ -84,3 +84,23 @@ def box_plot_2(percentiles, *args, **kwargs):
         
     return box_plot
 
+def format_plot(ax, title, subtitle):
+    fig = plt.gcf()
+    ax.set_title(title)
+    #ax.set_ylim(0)
+
+    # Add in title and subtitle
+    ax.text(x=.08, y=.86, 
+            s=subtitle, 
+            transform=fig.transFigure, 
+            ha='left', 
+            fontsize=20, 
+            alpha=.8)
+
+    # Set source text
+    ax.text(x=.08, y=0, 
+            s="""Source: "statbank.hagstova.fo""", 
+            transform=fig.transFigure, 
+            ha='left', 
+            fontsize=14, 
+            alpha=.7)
