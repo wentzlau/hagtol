@@ -99,7 +99,7 @@ def format_plot(ax, title, subtitle):
 
     # Set source text
     ax.text(x=.08, y=0, 
-            s="""Source: "statbank.hagstova.fo""", 
+            s="""Source: "statbank.hagstova.fo" """, 
             transform=fig.transFigure, 
             ha='left', 
             fontsize=14, 
