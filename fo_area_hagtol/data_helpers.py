@@ -82,4 +82,4 @@ def fetch_data(endpoint, json_body, tmp_file_name, expires = 60):
         #print(px['DATA'])
             return px['DATA']
         else:
-            raise Exception(f"error fetch file, status code: {r.status_code}") 
+            raise Exception(f"error fetch file, status code: {r.status_code} response: {r.content}") 

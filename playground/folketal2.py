@@ -171,9 +171,6 @@ if r.status_code == 200:
     dp.drop(dp.tail(1).index,inplace=True)
     #print(dp.head())
     fig = dp.plot( x='date', figsize=(12,9))
-    fig.axes.
-    fig.sett .xaxis.set_title
-    fig.axes.annotate
     plt.legend(['Males birth-death', 'Males domestic migration', "Males foreign migration", "Females birth-death", "Females domestic migration", "Females foreign migration", "Total"])
     style_fig(fig, "Title", "sub title", "footer")
     plt.show()
