@@ -4,7 +4,15 @@ from pyaxis import pyaxis
 
 def get_filter_data():
     filter = {
-        "suduroy" : {
+        
+        "Føroyar" : {
+            "px_id": "Total(region)",
+            "filter" : "agg:region-en.agg",
+            "value": "9999",
+            "municipalities":{}
+        },  
+        "Suðuroy" : {
+            "px_id": "Suðuroyar region",
             "filter" : "agg:region-en.agg",
             "value": "4600",
             "municipalities": {
@@ -34,12 +42,12 @@ def get_filter_data():
                 }
             },
         },
-        "sandoy" : {
+        "Sandoy" : {
+            "px_id": "Sandoyar region",
             "filter" : "agg:region-en.agg",
             "value": "4500",
             "municipalities":{}
-        }            
-        
+        }
     }
 
     return filter
@@ -54,10 +62,10 @@ def get_municipalities(region):
 
 def get_filter(region, municipality):
     filter_data = get_filter_data()
-    if municipality == "Øll":
-        return (filter_data[region]["filter"], filter_data[region]["value"])
+    if municipality == "Øll" or municipality == None:
+        return (filter_data[region]["filter"], filter_data[region]["value"], filter_data[region]["px_id"])
     else:
-        return (filter_data[region]["municipalities"][municipality]["filter"], filter_data[region]["municipalities"][municipality]["value"])
+        return (filter_data[region]["municipalities"][municipality]["filter"], filter_data[region]["municipalities"][municipality]["value"], None)
     
 def fetch_data(endpoint, json_body, tmp_file_name, expires = 60):
     temp_dir="px_cache"
