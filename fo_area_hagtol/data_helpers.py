@@ -2,6 +2,7 @@ import os
 import requests
 from pyaxis import pyaxis
 
+
 def get_filter_data():
     filter = {
         
@@ -10,7 +11,45 @@ def get_filter_data():
             "filter" : "agg:region-en.agg",
             "value": "9999",
             "municipalities":{}
-        },  
+        },
+        "Norðoya" : {
+            "px_id": "Norðoya region",
+            "filter" : "agg:region-en.agg",
+            "value": "4100",
+            "municipalities": {}
+        }
+        ,
+        "Eysturoyar øki" : {
+            "px_id": "Norðoya region",
+            "filter" : "agg:region-en.agg",
+            "value": "4200",
+            "municipalities": {}
+        },
+        "Norðstreymoyar øki" : {
+            "px_id": "Norðoya region",
+            "filter" : "agg:region-en.agg",
+            "value": "4300",
+            "municipalities": {}
+        },
+        "Suðurstreymoyar øki" : {
+            "px_id": "Norðoya region",
+            "filter" : "agg:region-en.agg",
+            "value": "4700",
+            "municipalities": {}
+        },
+        "Vága øki" : {
+            "px_id": "Norðoya region",
+            "filter" : "agg:region-en.agg",
+            "value": "4400",
+            "municipalities": {}
+        },
+        
+        "Sandoy" : {
+            "px_id": "Sandoyar region",
+            "filter" : "agg:region-en.agg",
+            "value": "4500",
+            "municipalities":{}
+        },
         "Suðuroy" : {
             "px_id": "Suðuroyar region",
             "filter" : "agg:region-en.agg",
@@ -41,13 +80,8 @@ def get_filter_data():
                     "value": "4607"
                 }
             },
-        },
-        "Sandoy" : {
-            "px_id": "Sandoyar region",
-            "filter" : "agg:region-en.agg",
-            "value": "4500",
-            "municipalities":{}
         }
+        
     }
 
     return filter
